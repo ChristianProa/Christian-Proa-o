@@ -1,0 +1,344 @@
+
+[
+  {
+    "id": "VIRT001",
+    "section": "1. Virtualización & Basisconfiguratie",
+    "subsection": "1.2 Tipos de red (Bridged, NAT, Host-Only)",
+    "question_es": "¿Cuál es la principal característica de una red VMware en modo 'Bridged'?",
+    "question_nl": "Wat is het belangrijkste kenmerk van een VMware-netwerk in 'Bridged' modus?",
+    "options": [
+      { "label": "A", "text_es": "La VM comparte la misma dirección IP que el host.", "text_nl": "De VM deelt hetzelfde IP-adres als de host." },
+      { "label": "B", "text_es": "La VM obtiene una IP de la red física, actuando como otro dispositivo en la LAN.", "text_nl": "De VM krijgt een IP-adres van het fysieke netwerk en gedraagt zich als een ander apparaat op de LAN." },
+      { "label": "C", "text_es": "La VM solo puede comunicarse con el host.", "text_nl": "De VM kan alleen communiceren met de host." },
+      { "label": "D", "text_es": "El host realiza NAT para la VM, ocultando su IP.", "text_nl": "De host voert NAT uit voor de VM, waardoor het IP-adres wordt verborgen." }
+    ],
+    "correct_option": "B",
+    "explanation_es": "En modo Bridged, el adaptador de red virtual de la VM se conecta directamente a la red física. La VM aparece en la red como un dispositivo independiente, con su propia IP en la misma subred que el host.",
+    "explanation_nl": "In de Bridged-modus wordt de virtuele netwerkadapter van de VM rechtstreeks verbonden met het fysieke netwerk. De VM verschijnt op het netwerk als een onafhankelijk fysiek apparaat, met een eigen IP-adres in hetzelfde subnet als de host."
+  },
+  {
+    "id": "VIRT002",
+    "section": "1. Virtualización & Basisconfiguratie",
+    "subsection": "1.4 Naming, IP addressing, snapshots",
+    "question_es": "¿Para qué se utiliza principalmente un 'snapshot' en VMware?",
+    "question_nl": "Waarvoor wordt een 'snapshot' in VMware voornamelijk gebruikt?",
+    "options": [
+      { "label": "A", "text_es": "Para hacer una copia de seguridad completa de la VM para archivado a largo plazo.", "text_nl": "Om een volledige back-up van de VM te maken voor lange-termijnarchivering." },
+      { "label": "B", "text_es": "Para clonar una VM y crear una nueva máquina idéntica.", "text_nl": "Om een VM te klonen en een nieuwe, identieke machine te maken." },
+      { "label": "C", "text_es": "Para guardar el estado de una VM en un momento específico, permitiendo revertir a ese punto.", "text_nl": "Om de staat van een VM op een specifiek moment op te slaan, zodat men naar dat punt kan terugkeren." },
+      { "label": "D", "text_es": "Para mejorar el rendimiento de la VM liberando espacio en disco.", "text_nl": "Om de prestaties van de VM te verbeteren door schijfruimte vrij te maken." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "Un snapshot captura el estado, los datos y la configuración de hardware de una máquina virtual en un momento específico. Es ideal para crear un punto de restauración antes de realizar cambios importantes, como instalar software o aplicar actualizaciones.",
+    "explanation_nl": "Een snapshot legt de staat, gegevens en hardwareconfiguratie van een virtuele machine op een specifiek moment vast. Het is ideaal voor het creëren van een herstelpunt voordat belangrijke wijzigingen worden doorgevoerd, zoals het installeren van software of het toepassen van updates."
+  },
+  {
+    "id": "VIRT003",
+    "section": "1. Virtualización & Basisconfiguratie",
+    "subsection": "1.2 Tipos de red (Bridged, NAT, Host-Only)",
+    "question_es": "En modo de red 'Host-Only', ¿con qué puede comunicarse la máquina virtual por defecto?",
+    "question_nl": "In 'Host-Only' netwerkmodus, waarmee kan de virtuele machine standaard communiceren?",
+    "options": [
+      { "label": "A", "text_es": "Con el host y otras VMs en la misma red Host-Only.", "text_nl": "Met de host en andere VM's op hetzelfde Host-Only netwerk." },
+      { "label": "B", "text_es": "Solo con el host.", "text_nl": "Alleen met de host." },
+      { "label": "C", "text_es": "Con el host y la red externa (Internet).", "text_nl": "Met de host en het externe netwerk (internet)." },
+      { "label": "D", "text_es": "Con cualquier dispositivo en la red local física.", "text_nl": "Met elk apparaat op het fysieke lokale netwerk." }
+    ],
+    "correct_option": "A",
+    "explanation_es": "El modo 'Host-Only' crea una red privada y aislada que solo incluye al sistema anfitrión (host) y a las máquinas virtuales configuradas en esa red. No permite el acceso a la red externa por defecto.",
+    "explanation_nl": "De 'Host-Only' modus creëert een privé en geïsoleerd netwerk dat alleen het hostsysteem en de virtuele machines in dat netwerk omvat. Het staat standaard geen toegang tot het externe netwerk toe."
+  },
+  {
+    "id": "VIRT004",
+    "section": "1. Virtualización & Basisconfiguratie",
+    "subsection": "1.1 VMware Workstation / VMnet",
+    "question_es": "¿Cuál es el propósito principal de instalar VMware Tools en una máquina virtual?",
+    "question_nl": "Wat is het hoofddoel van het installeren van VMware Tools op een virtuele machine?",
+    "options": [
+      { "label": "A", "text_es": "Activar la licencia del sistema operativo invitado.", "text_nl": "De licentie van het gastbesturingssysteem activeren." },
+      { "label": "B", "text_es": "Mejorar el rendimiento gráfico, del ratón y la integración entre host e invitado.", "text_nl": "De grafische prestaties, de muis en de integratie tussen host en gast verbeteren." },
+      { "label": "C", "text_es": "Proporcionar conectividad de red a la VM.", "text_nl": "Netwerkconnectiviteit aan de VM bieden." },
+      { "label": "D", "text_es": "Crear snapshots de la máquina virtual.", "text_nl": "Snapshots van de virtuele machine maken." }
+    ],
+    "correct_option": "B",
+    "explanation_es": "VMware Tools es un conjunto de utilidades que mejora el rendimiento del sistema operativo invitado de la VM y mejora la gestión de la misma. Incluye controladores de vídeo, sincronización del ratón, y la capacidad de copiar/pegar entre host e invitado.",
+    "explanation_nl": "VMware Tools is een reeks hulpprogramma's die de prestaties van het gastbesturingssysteem van de VM verbetert en het beheer ervan vergemakkelijkt. Het omvat videodrivers, muissynchronisatie en de mogelijkheid om te kopiëren/plakken tussen host en gast."
+  },
+  {
+    "id": "AD001",
+    "section": "2. Windows Server – Active Directory",
+    "subsection": "2.2 AD DS: dominio, forest, DC",
+    "question_es": "En un entorno de Active Directory, ¿cuál es la función principal de un Domain Controller (DC)?",
+    "question_nl": "Wat is de primaire functie van een Domain Controller (DC) in een Active Directory-omgeving?",
+    "options": [
+      { "label": "A", "text_es": "Servir archivos a los usuarios de la red a través de SMB.", "text_nl": "Bestanden aan netwerkgebruikers serveren via SMB." },
+      { "label": "B", "text_es": "Asignar direcciones IP a los clientes mediante DHCP.", "text_nl": "IP-adressen toewijzen aan clients via DHCP." },
+      { "label": "C", "text_es": "Autenticar y autorizar a los usuarios y ordenadores en el dominio.", "text_nl": "Gebruikers en computers in het domein authenticeren en autoriseren." },
+      { "label": "D", "text_es": "Resolver nombres de dominio de Internet para los clientes.", "text_nl": "Internet-domeinnamen omzetten voor clients." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "Un Domain Controller es un servidor que ejecuta Active Directory Domain Services (AD DS). Su rol fundamental es gestionar el acceso a los recursos de la red, autenticando usuarios y ordenadores y aplicando políticas de seguridad.",
+    "explanation_nl": "Een Domain Controller is een server die Active Directory Domain Services (AD DS) draait. De fundamentele rol is het beheren van de toegang tot netwerkbronnen door gebruikers en computers te authenticeren en beveiligingsbeleid toe te passen."
+  },
+  {
+    "id": "AD002",
+    "section": "2. Windows Server – Active Directory",
+    "subsection": "2.4 AGDLP / AGDLP-model",
+    "question_es": "Según el principio AGDLP, ¿dónde se deben asignar los permisos (Permissions)?",
+    "question_nl": "Volgens het AGDLP-principe, waar moeten de permissies (Permissions) worden toegewezen?",
+    "options": [
+      { "label": "A", "text_es": "Directamente a las cuentas de usuario (Accounts).", "text_nl": "Rechtstreeks aan gebruikersaccounts (Accounts)." },
+      { "label": "B", "text_es": "A los Grupos Globales (Global Groups).", "text_nl": "Aan Global Groups." },
+      { "label": "C", "text_es": "A los Grupos Locales de Dominio (Domain Local Groups).", "text_nl": "Aan Domain Local Groups." },
+      { "label": "D", "text_es": "A las Unidades Organizativas (OUs).", "text_nl": "Aan Organizational Units (OUs)." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "AGDLP significa: Accounts van en Grupos Globales, que van en Grupos Locales de Dominio, a los que se les asignan Permisos. Los permisos sobre los recursos (como carpetas) se asignan a los Grupos Locales de Dominio.",
+    "explanation_nl": "AGDLP staat voor: Accounts in Global Groups, die in Domain Local Groups gaan, waaraan Permissions worden toegewezen. Permissies op bronnen (zoals mappen) worden toegewezen aan de Domain Local Groups."
+  },
+  {
+    "id": "AD003",
+    "section": "2. Windows Server – Active Directory",
+    "subsection": "2.5 NTFS permissions",
+    "question_es": "Un usuario es miembro de dos grupos. El GrupoA tiene permiso de 'Lectura' sobre una carpeta y el GrupoB tiene permiso de 'Modificar'. ¿Cuál es el permiso efectivo del usuario sobre esa carpeta?",
+    "question_nl": "Een gebruiker is lid van twee groepen. GroepA heeft 'Read' permissie op een map en GroepB heeft 'Modify' permissie. Wat is de effectieve permissie van de gebruiker op die map?",
+    "options": [
+      { "label": "A", "text_es": "Solo Lectura (el más restrictivo).", "text_nl": "Alleen Read (de meest restrictieve)." },
+      { "label": "B", "text_es": "Modificar (el más permisivo).", "text_nl": "Modify (de meest permissieve)." },
+      { "label": "C", "text_es": "Sin acceso, debido a un conflicto.", "text_nl": "Geen toegang, vanwege een conflict." },
+      { "label": "D", "text_es": "Control total.", "text_nl": "Full Control." }
+    ],
+    "correct_option": "B",
+    "explanation_es": "Los permisos NTFS son acumulativos. El permiso efectivo de un usuario es la combinación de todos los permisos asignados a su cuenta y a todos los grupos a los que pertenece. En este caso, 'Modificar' incluye los permisos de 'Lectura', por lo que el permiso efectivo es 'Modificar'. La única excepción es un 'Deny' explícito, que siempre prevalece.",
+    "explanation_nl": "NTFS-permissies zijn cumulatief. De effectieve permissie van een gebruiker is de combinatie van alle permissies die zijn toegewezen aan zijn account en alle groepen waarvan hij lid is. In dit geval omvat 'Modify' de permissies van 'Read', dus de effectieve permissie is 'Modify'. De enige uitzondering is een expliciete 'Deny', die altijd voorrang heeft."
+  },
+    {
+    "id": "AD004",
+    "section": "2. Windows Server – Active Directory",
+    "subsection": "2.8 GPO (conceptos, ejemplos básicos)",
+    "question_es": "¿Cuál es el comando para forzar la actualización de las políticas de grupo en un cliente Windows?",
+    "question_nl": "Wat is het commando om de groepsbeleidsregels op een Windows-client geforceerd bij te werken?",
+    "options": [
+      { "label": "A", "text_es": "gprefresh", "text_nl": "gprefresh" },
+      { "label": "B", "text_es": "gpupdate /force", "text_nl": "gpupdate /force" },
+      { "label": "C", "text_es": "gpresult /r", "text_nl": "gpresult /r" },
+      { "label": "D", "text_es": "dcgpofix", "text_nl": "dcgpofix" }
+    ],
+    "correct_option": "B",
+    "explanation_es": "El comando `gpupdate /force` reaplica todas las políticas de grupo, incluso si no han cambiado. `gpresult /r` se usa para ver qué políticas se están aplicando al usuario y al equipo.",
+    "explanation_nl": "Het commando `gpupdate /force` past alle groepsbeleidsregels opnieuw toe, zelfs als ze niet zijn gewijzigd. `gpresult /r` wordt gebruikt om te zien welke beleidsregels op de gebruiker en de computer worden toegepast.",
+    "commands": ["gpupdate /force", "gpresult /r"]
+  },
+  {
+    "id": "AD005",
+    "section": "2. Windows Server – Active Directory",
+    "subsection": "2.3 OU, Users, Groups",
+    "question_es": "¿Cuál es la principal razón para crear Unidades Organizativas (OUs) en Active Directory?",
+    "question_nl": "Wat is de belangrijkste reden om Organizational Units (OUs) in Active Directory aan te maken?",
+    "options": [
+      { "label": "A", "text_es": "Para separar dominios y bosques.", "text_nl": "Om domeinen en forests te scheiden." },
+      { "label": "B", "text_es": "Para reflejar la estructura de departamentos de la empresa y delegar la administración.", "text_nl": "Om de afdelingsstructuur van het bedrijf weer te geven en het beheer te delegeren." },
+      { "label": "C", "text_es": "Para mejorar la seguridad del Kerberos.", "text_nl": "Om de Kerberos-beveiliging te verbeteren." },
+      { "label": "D", "text_es": "Para asignar permisos NTFS a los recursos.", "text_nl": "Om NTFS-permissies aan bronnen toe te wijzen." }
+    ],
+    "correct_option": "B",
+    "explanation_es": "Las OUs son contenedores dentro de un dominio que pueden contener usuarios, grupos, equipos y otras OUs. Sus dos propósitos principales son la organización de objetos para reflejar la estructura de la empresa y la delegación de control administrativo sobre esos objetos a usuarios o grupos específicos. También son el nivel más bajo al que se pueden vincular GPOs.",
+    "explanation_nl": "OUs zijn containers binnen een domein die gebruikers, groepen, computers en andere OUs kunnen bevatten. Hun twee hoofddoelen zijn de organisatie van objecten om de bedrijfsstructuur weer te geven en de delegatie van administratieve controle over die objecten aan specifieke gebruikers of groepen. Ze zijn ook het laagste niveau waarop GPOs kunnen worden gekoppeld."
+  },
+  {
+    "id": "DNS001",
+    "section": "3. DNS & DHCP",
+    "subsection": "3.1 DNS fundamentos",
+    "question_es": "¿Qué tipo de registro DNS se utiliza para mapear un nombre de host a una dirección IPv4?",
+    "question_nl": "Welk type DNS-record wordt gebruikt om een hostnaam aan een IPv4-adres te koppelen?",
+    "options": [
+      { "label": "A", "text_es": "AAAA", "text_nl": "AAAA" },
+      { "label": "B", "text_es": "MX", "text_nl": "MX" },
+      { "label": "C", "text_es": "A", "text_nl": "A" },
+      { "label": "D", "text_es": "PTR", "text_nl": "PTR" }
+    ],
+    "correct_option": "C",
+    "explanation_es": "Un registro 'A' (Address) se utiliza para apuntar un nombre de dominio o subdominio a una dirección IPv4. El registro 'AAAA' es para IPv6, 'MX' es para servidores de correo y 'PTR' se usa para la resolución inversa (IP a nombre).",
+    "explanation_nl": "Een 'A' (Address) record wordt gebruikt om een domeinnaam of subdomein naar een IPv4-adres te laten wijzen. Het 'AAAA' record is voor IPv6, 'MX' is voor mailservers, en 'PTR' wordt gebruikt voor reverse lookup (IP naar naam)."
+  },
+  {
+    "id": "DNS002",
+    "section": "3. DNS & DHCP",
+    "subsection": "3.9 Troubleshooting DNS/DHCP",
+    "question_es": "Ejecutas 'nslookup www.google.com' y recibes un error 'Non-existent domain'. ¿Cuál es una causa probable del problema?",
+    "question_nl": "Je voert 'nslookup www.google.com' uit en krijgt de foutmelding 'Non-existent domain'. Wat is een waarschijnlijke oorzaak van het probleem?",
+    "options": [
+      { "label": "A", "text_es": "Tu ordenador no tiene una dirección IP.", "text_nl": "Je computer heeft geen IP-adres." },
+      { "label": "B", "text_es": "El servidor DHCP no está funcionando.", "text_nl": "De DHCP-server werkt niet." },
+      { "label": "C", "text_es": "El servidor DNS configurado en tu cliente no puede resolver el nombre o no es alcanzable.", "text_nl": "De geconfigureerde DNS-server op je client kan de naam niet omzetten of is onbereikbaar." },
+      { "label": "D", "text_es": "El servidor web de Google está caído.", "text_nl": "De webserver van Google is offline." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "El comando 'nslookup' consulta directamente al servidor DNS. Un error de 'Non-existent domain' indica un problema en la resolución de nombres. Esto suele ocurrir porque el servidor DNS no responde, es incorrecto, o no tiene la información y no puede reenviarla a otro servidor.",
+    "explanation_nl": "Het commando 'nslookup' bevraagt rechtstreeks de DNS-server. Een 'Non-existent domain' fout duidt op een probleem met naamresolutie. Dit gebeurt meestal omdat de DNS-server niet reageert, onjuist is, of de informatie niet heeft en niet kan doorsturen naar een andere server.",
+    "commands": ["nslookup <domain>", "ipconfig /all (Windows)", "cat /etc/resolv.conf (Linux)"]
+  },
+  {
+    "id": "DNS003",
+    "section": "3. DNS & DHCP",
+    "subsection": "3.6 DHCP Windows",
+    "question_es": "¿Cuál es el proceso de 4 pasos que utiliza un cliente para obtener una dirección IP de un servidor DHCP?",
+    "question_nl": "Wat is het 4-stappenproces dat een client gebruikt om een IP-adres van een DHCP-server te verkrijgen?",
+    "options": [
+      { "label": "A", "text_es": "Request, Offer, Discover, Acknowledge", "text_nl": "Request, Offer, Discover, Acknowledge" },
+      { "label": "B", "text_es": "Discover, Offer, Request, Acknowledge", "text_nl": "Discover, Offer, Request, Acknowledge" },
+      { "label": "C", "text_es": "Offer, Discover, Acknowledge, Request", "text_nl": "Offer, Discover, Acknowledge, Request" },
+      { "label": "D", "text_es": "Discover, Request, Offer, Acknowledge", "text_nl": "Discover, Request, Offer, Acknowledge" }
+    ],
+    "correct_option": "B",
+    "explanation_es": "El proceso se conoce como DORA: 1. Discover: El cliente envía un broadcast para encontrar servidores DHCP. 2. Offer: Los servidores DHCP responden con una oferta de dirección IP. 3. Request: El cliente elige una oferta y solicita formalmente esa dirección IP. 4. Acknowledge: El servidor DHCP confirma la asignación y envía la configuración final.",
+    "explanation_nl": "Het proces staat bekend als DORA: 1. Discover: De client zendt een broadcast uit om DHCP-servers te vinden. 2. Offer: DHCP-servers reageren met een aanbod van een IP-adres. 3. Request: De client kiest een aanbod en vraagt formeel dat IP-adres aan. 4. Acknowledge: De DHCP-server bevestigt de toewijzing en stuurt de definitieve configuratie."
+  },
+  {
+    "id": "DNS004",
+    "section": "3. DNS & DHCP",
+    "subsection": "3.4 Forward & Reverse zones",
+    "question_es": "¿Para qué se utiliza una Zona de Búsqueda Inversa (Reverse Lookup Zone) en DNS?",
+    "question_nl": "Waarvoor wordt een Reverse Lookup Zone in DNS gebruikt?",
+    "options": [
+      { "label": "A", "text_es": "Para convertir nombres de host en direcciones IP.", "text_nl": "Om hostnamen om te zetten naar IP-adressen." },
+      { "label": "B", "text_es": "Para encontrar el servidor de correo de un dominio.", "text_nl": "Om de mailserver van een domein te vinden." },
+      { "label": "C", "text_es": "Para convertir direcciones IP en nombres de host.", "text_nl": "Om IP-adressen om te zetten naar hostnamen." },
+      { "label": "D", "text_es": "Para transferir zonas entre servidores DNS.", "text_nl": "Om zones over te dragen tussen DNS-servers." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "Una Zona de Búsqueda Inversa hace lo contrario que una zona de búsqueda directa. Utiliza registros PTR (Pointer) para mapear una dirección IP a un nombre de host. Es comúnmente utilizada por sistemas de seguridad y servidores de correo para verificar la identidad de los clientes que se conectan.",
+    "explanation_nl": "Een Reverse Lookup Zone doet het tegenovergestelde van een forward lookup zone. Het gebruikt PTR (Pointer) records om een IP-adres aan een hostnaam te koppelen. Het wordt vaak gebruikt door beveiligingssystemen en mailservers om de identiteit van verbindende clients te verifiëren."
+  },
+  {
+    "id": "LNX001",
+    "section": "4. Linux Serverbeheer",
+    "subsection": "4.3 Linux users & permissions",
+    "question_es": "En Linux, ¿qué comando se utiliza para cambiar el propietario de un archivo?",
+    "question_nl": "Welk commando wordt in Linux gebruikt om de eigenaar van een bestand te veranderen?",
+    "options": [
+      { "label": "A", "text_es": "chmod", "text_nl": "chmod" },
+      { "label": "B", "text_es": "chown", "text_nl": "chown" },
+      { "label": "C", "text_es": "passwd", "text_nl": "passwd" },
+      { "label": "D", "text_es": "usermod", "text_nl": "usermod" }
+    ],
+    "correct_option": "B",
+    "explanation_es": "El comando 'chown' (change owner) se utiliza para cambiar el propietario y/o el grupo de archivos y directorios. 'chmod' se usa para cambiar los permisos (lectura, escritura, ejecución).",
+    "explanation_nl": "Het commando 'chown' (change owner) wordt gebruikt om de eigenaar en/of groep van bestanden en mappen te wijzigen. 'chmod' wordt gebruikt om de permissies (lezen, schrijven, uitvoeren) te wijzigen.",
+    "commands": ["chown user:group filename.txt", "chown newowner filename.txt"]
+  },
+  {
+    "id": "LNX002",
+    "section": "4. Linux Serverbeheer",
+    "subsection": "4.6 Linux SMB (Samba)",
+    "question_es": "¿Cuál es el propósito principal de Samba en un servidor Linux?",
+    "question_nl": "Wat is het hoofddoel van Samba op een Linux-server?",
+    "options": [
+      { "label": "A", "text_es": "Proporcionar acceso a archivos a clientes Linux a través del protocolo NFS.", "text_nl": "Bestandstoegang bieden aan Linux-clients via het NFS-protocol." },
+      { "label": "B", "text_es": "Actuar como un servidor web Apache.", "text_nl": "Functioneren als een Apache-webserver." },
+      { "label": "C", "text_es": "Compartir archivos e impresoras con clientes Windows utilizando el protocolo SMB/CIFS.", "text_nl": "Bestanden en printers delen met Windows-clients via het SMB/CIFS-protocol." },
+      { "label": "D", "text_es": "Gestionar paquetes de software en distribuciones basadas en Red Hat.", "text_nl": "Softwarepakketten beheren op Red Hat-gebaseerde distributies." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "Samba es una reimplementación del protocolo de red SMB/CIFS. Permite que los servidores Linux actúen como un servidor de archivos y de impresión en redes con clientes Windows, facilitando la interoperabilidad.",
+    "explanation_nl": "Samba is een herimplementatie van het SMB/CIFS-netwerkprotocol. Het stelt Linux-servers in staat om als bestands- en printserver te functioneren in netwerken met Windows-clients, wat de interoperabiliteit vergemakkelijkt."
+  },
+    {
+    "id": "LNX003",
+    "section": "4. Linux Serverbeheer",
+    "subsection": "4.3 Linux users & permissions",
+    "question_es": "Si los permisos de un archivo son `rwxr-xr--` (754), ¿qué puede hacer un miembro del grupo propietario del archivo?",
+    "question_nl": "Als de permissies van een bestand `rwxr-xr--` (754) zijn, wat kan een lid van de groep die het bestand bezit doen?",
+    "options": [
+      { "label": "A", "text_es": "Leer, escribir y ejecutar el archivo.", "text_nl": "Het bestand lezen, schrijven en uitvoeren." },
+      { "label": "B", "text_es": "Leer y ejecutar el archivo, pero no escribirlo.", "text_nl": "Het bestand lezen en uitvoeren, maar niet schrijven." },
+      { "label": "C", "text_es": "Solo leer el archivo.", "text_nl": "Alleen het bestand lezen." },
+      { "label": "D", "text_es": "Nada, no tiene permisos.", "text_nl": "Niets, heeft geen permissies." }
+    ],
+    "correct_option": "B",
+    "explanation_es": "Los permisos en Linux se dividen en tres sets: Usuario, Grupo y Otros. `rwxr-xr--` se desglosa así: Usuario (`rwx` = leer, escribir, ejecutar), Grupo (`r-x` = leer, ejecutar), Otros (`r--` = leer). Por lo tanto, un miembro del grupo puede leer y ejecutar.",
+    "explanation_nl": "Permissies in Linux zijn verdeeld in drie sets: Gebruiker, Groep en Anderen. `rwxr-xr--` wordt als volgt uitgesplitst: Gebruiker (`rwx` = lezen, schrijven, uitvoeren), Groep (`r-x` = lezen, uitvoeren), Anderen (`r--` = lezen). Een groepslid kan dus lezen en uitvoeren.",
+    "commands": ["chmod 754 <file>"]
+  },
+  {
+    "id": "LNX004",
+    "section": "4. Linux Serverbeheer",
+    "subsection": "4.2 NetworkManager & IP configuratie",
+    "question_es": "¿Qué comando de `nmcli` usarías para ver el estado de todas las conexiones de red?",
+    "question_nl": "Welk `nmcli` commando zou je gebruiken om de status van alle netwerkverbindingen te bekijken?",
+    "options": [
+      { "label": "A", "text_es": "nmcli device status", "text_nl": "nmcli device status" },
+      { "label": "B", "text_es": "nmcli connection show", "text_nl": "nmcli connection show" },
+      { "label": "C", "text_es": "nmcli networking on", "text_nl": "nmcli networking on" },
+      { "label": "D", "text_es": "nmcli general status", "text_nl": "nmcli general status" }
+    ],
+    "correct_option": "B",
+    "explanation_es": "`nmcli connection show` lista todos los perfiles de conexión configurados. Para ver el estado de los dispositivos físicos (interfaces de red), se usaría `nmcli device status`. Ambas son útiles para diagnosticar problemas de red.",
+    "explanation_nl": "`nmcli connection show` toont alle geconfigureerde verbindingsprofielen. Om de status van de fysieke apparaten (netwerkinterfaces) te zien, zou je `nmcli device status` gebruiken. Beide zijn nuttig voor het diagnosticeren van netwerkproblemen.",
+    "commands": ["nmcli con show", "nmcli dev status"]
+  },
+  {
+    "id": "SEC001",
+    "section": "5. Security & Identity",
+    "subsection": "5.4 NTFS vs Share permissions",
+    "question_es": "Cuando un usuario accede a una carpeta compartida a través de la red, ¿qué combinación de permisos se aplica?",
+    "question_nl": "Wanneer een gebruiker via het netwerk toegang krijgt tot een gedeelde map, welke combinatie van permissies wordt dan toegepast?",
+    "options": [
+      { "label": "A", "text_es": "Solo los permisos de Compartir (Share).", "text_nl": "Alleen de Share-permissies." },
+      { "label": "B", "text_es": "Solo los permisos NTFS.", "text_nl": "Alleen de NTFS-permissies." },
+      { "label": "C", "text_es": "Se aplica el permiso más permisivo entre Share y NTFS.", "text_nl": "De meest permissieve combinatie van Share- en NTFS-permissies wordt toegepast." },
+      { "label": "D", "text_es": "Se aplica el permiso más restrictivo entre Share y NTFS.", "text_nl": "De meest restrictieve combinatie van Share- en NTFS-permissies wordt toegepast." }
+    ],
+    "correct_option": "D",
+    "explanation_es": "Para el acceso a través de la red, Windows combina los permisos de la carpeta compartida (Share) y los permisos del sistema de archivos (NTFS). El permiso efectivo final es el más restrictivo de los dos. Si Share permite 'Lectura' y NTFS permite 'Modificar', el usuario solo podrá leer.",
+    "explanation_nl": "Voor netwerktoegang combineert Windows de permissies van de gedeelde map (Share) en de bestandssysteem-permissies (NTFS). De uiteindelijke effectieve permissie is de meest restrictieve van de twee. Als Share 'Read' toestaat en NTFS 'Modify' toestaat, kan de gebruiker alleen lezen."
+  },
+  {
+    "id": "SEC002",
+    "section": "5. Security & Identity",
+    "subsection": "5.5 Least privilege & best practices",
+    "question_es": "¿Qué describe mejor el 'Principio de Menor Privilegio' (Principle of Least Privilege)?",
+    "question_nl": "Wat beschrijft het 'Principle of Least Privilege' het best?",
+    "options": [
+      { "label": "A", "text_es": "Dar a todos los usuarios derechos de administrador para que puedan solucionar sus propios problemas.", "text_nl": "Alle gebruikers beheerdersrechten geven zodat ze hun eigen problemen kunnen oplossen." },
+      { "label": "B", "text_es": "Asignar a los usuarios y sistemas solo los permisos estrictamente necesarios para realizar sus tareas.", "text_nl": "Gebruikers en systemen alleen de strikt noodzakelijke permissies geven om hun taken uit te voeren." },
+      { "label": "C", "text_es": "Utilizar contraseñas complejas y rotarlas cada 30 días.", "text_nl": "Complexe wachtwoorden gebruiken en deze elke 30 dagen roteren." },
+      { "label": "D", "text_es": "Asegurarse de que el grupo 'Domain Admins' tenga al menos 5 miembros.", "text_nl": "Ervoor zorgen dat de 'Domain Admins'-groep minstens 5 leden heeft." }
+    ],
+    "correct_option": "B",
+    "explanation_es": "El Principio de Menor Privilegio es un concepto fundamental de seguridad informática que dicta que a una entidad (un usuario, un proceso, un programa) se le deben dar los mínimos niveles de acceso o permisos necesarios para realizar sus funciones. Esto limita el daño en caso de que la cuenta sea comprometida.",
+    "explanation_nl": "Het Principle of Least Privilege is een fundamenteel concept in computerbeveiliging dat voorschrijft dat een entiteit (een gebruiker, een proces, een programma) de minimale toegangsniveaus of permissies moet krijgen die nodig zijn om zijn functies uit te voeren. Dit beperkt de schade in het geval dat het account wordt gecompromitteerd."
+  },
+  {
+    "id": "SEC003",
+    "section": "5. Security & Identity",
+    "subsection": "5.2 Linux join to AD (realmd, sssd)",
+    "question_es": "¿Cuál es la función del servicio 'sssd' (System Security Services Daemon) en un servidor Linux unido a un dominio de Active Directory?",
+    "question_nl": "Wat is de functie van de 'sssd' (System Security Services Daemon) dienst op een Linux-server die is toegevoegd aan een Active Directory-domein?",
+    "options": [
+      { "label": "A", "text_es": "Compartir archivos con clientes Windows.", "text_nl": "Bestanden delen met Windows-clients." },
+      { "label": "B", "text_es": "Gestionar las actualizaciones del sistema.", "text_nl": "Systeemupdates beheren." },
+      { "label": "C", "text_es": "Gestionar la autenticación de usuarios remotos y el almacenamiento en caché de credenciales.", "text_nl": "Authenticatie van externe gebruikers beheren en referenties cachen." },
+      { "label": "D", "text_es": "Configurar los permisos del firewall.", "text_nl": "De firewallpermissies configureren." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "SSSD actúa como un intermediario entre las aplicaciones locales y las fuentes de identidad remotas como AD o LDAP. Su función clave es permitir la autenticación de usuarios del dominio y, muy importante, almacenar en caché sus credenciales. Esto permite que los usuarios del dominio inicien sesión en la máquina Linux incluso si el Domain Controller no está disponible temporalmente.",
+    "explanation_nl": "SSSD fungeert als een tussenpersoon tussen lokale applicaties en externe identiteitsbronnen zoals AD of LDAP. De belangrijkste functie is het mogelijk maken van authenticatie voor domeingebruikers en, heel belangrijk, het cachen van hun referenties. Hierdoor kunnen domeingebruikers inloggen op de Linux-machine, zelfs als de Domain Controller tijdelijk niet beschikbaar is."
+  },
+  {
+    "id": "SEC004",
+    "section": "5. Security & Identity",
+    "subsection": "5.3 Kerberos (conceptueel)",
+    "question_es": "En el protocolo Kerberos, ¿qué es el KDC (Key Distribution Center)?",
+    "question_nl": "Wat is de KDC (Key Distribution Center) in het Kerberos-protocol?",
+    "options": [
+      { "label": "A", "text_es": "El cliente que solicita acceso a un servicio.", "text_nl": "De client die toegang tot een dienst aanvraagt." },
+      { "label": "B", "text_es": "El servicio al que el cliente quiere acceder (ej. un servidor de archivos).", "text_nl": "De dienst waartoe de client toegang wil (bijv. een bestandsserver)." },
+      { "label": "C", "text_es": "Un servicio que se ejecuta en el Domain Controller y que emite los tickets de autenticación.", "text_nl": "Een dienst die op de Domain Controller draait en de authenticatietickets uitgeeft." },
+      { "label": "D", "text_es": "Un ticket que prueba la identidad del usuario.", "text_nl": "Een ticket dat de identiteit van de gebruiker bewijst." }
+    ],
+    "correct_option": "C",
+    "explanation_es": "El KDC es el corazón de Kerberos y es un servicio que se ejecuta en cada Domain Controller. Está compuesto por dos partes: el Authentication Server (AS), que autentica al usuario inicialmente, y el Ticket Granting Server (TGS), que emite tickets para servicios específicos. Actúa como un tercero de confianza para el cliente y el servicio.",
+    "explanation_nl": "De KDC is het hart van Kerberos en is een dienst die op elke Domain Controller draait. Het bestaat uit twee delen: de Authentication Server (AS), die de gebruiker in eerste instantie authenticeert, en de Ticket Granting Server (TGS), die tickets voor specifieke diensten uitgeeft. Het fungeert als een vertrouwde derde partij voor de client en de dienst."
+  }
+]
